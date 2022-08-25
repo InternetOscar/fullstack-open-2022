@@ -1,22 +1,3 @@
-const Course = (props) => {
-	console.log(props);
-	return (
-		<>
-			{/* Header */}
-			<h1>{props.course.name}</h1>
-		</>
-	);
-};
-
-const Part = (props) => {
-	console.log(props.course.parts);
-	return (
-		<>
-			<p>Part</p>
-		</>
-	);
-};
-
 const App = () => {
 	const course = {
 		id: 1,
@@ -51,6 +32,9 @@ const App = () => {
 			</p>
 			<p>
 				{course.parts[2].name} {course.parts[2].exercises}
+			</p>
+			<p>
+				<strong>total of </strong>
 			</p>
 		</>
 	);
